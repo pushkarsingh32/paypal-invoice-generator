@@ -1,0 +1,33 @@
+{
+  "name": "paypal-invoice-generator",
+  "version": "1.0.0",
+  "description": "A Node.js script to generate, preview, and send invoices using PayPal API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "paypal",
+    "invoice",
+    "automation",
+    "guest-post",
+    "billing"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.3",
+    "dotenv": "^16.3.1",
+    "inquirer": "^8.2.6",
+    "moment": "^2.29.4",
+    "validator": "^13.11.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.0"
+  }
+}
