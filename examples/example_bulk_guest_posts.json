@@ -1,0 +1,27 @@
+{
+  "services": [
+    {
+      "type": "guest_post",
+      "price": 40,
+      "url": "https://techgeekers.com/wow-mop-classic-gold-guide",
+      "title": "WoW MoP Classic Gold: Complete Guide",
+      "description": "Comprehensive guide for gold farming in World of Warcraft: Mists of Pandaria Classic"
+    },
+    {
+      "type": "guest_post", 
+      "price": 40,
+      "url": "https://techgeekers.com/wow-mop-classic-professions",
+      "title": "WoW MoP Classic: Best Professions for Gold Making",
+      "description": "In-depth analysis of the most profitable professions in MoP Classic"
+    },
+    {
+      "type": "guest_post",
+      "price": 40,
+      "url": "https://techgeekers.com/wow-mop-classic-auction-house",
+      "title": "WoW MoP Classic: Auction House Strategies",
+      "description": "Advanced auction house techniques for maximizing profit in MoP Classic"
+    }
+  ],
+  "note": "Thank you for ordering our 3-article gaming package. All articles have been published successfully. Payment is due within 3 days.",
+  "reference": "GAMING-Package-001"
+}

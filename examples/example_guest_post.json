@@ -1,0 +1,15 @@
+{
+  "customer": {
+    "email": "customer@example.com",
+    "firstName": "John",
+    "lastName": "Doe",
+    "businessName": "Example Company"
+  },
+  "service": {
+    "type": "guest_post",
+    "price": 40,
+    "url": "https://techgeekers.com/wow-mop-classic-gold-tech-driven-gold-optimization/",
+    "title": "WoW MoP Classic Gold: Tech-Driven Gold Optimization",
+    "description": "High-quality guest post article about WoW MoP Classic gold optimization strategies"
+  }
+}

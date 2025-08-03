@@ -101,6 +101,12 @@ invoices/
 exports/
 backups/
 
+# Customer data and private information
+customers/
+private-examples/
+real-customers/
+*.private.json
+
 # Local development files
 .env.development
 local-config.json

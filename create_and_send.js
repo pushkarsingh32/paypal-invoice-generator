@@ -18,7 +18,9 @@ async function createAndSendInvoice() {
             name: 'invoiceType',
             message: 'What type of invoice do you want to create?',
             choices: [
-                { name: '🎯 Sencha Customer (Test)', value: 'sencha' },
+                { name: '🎯 Muzalex Guest Post ($40)', value: 'muzalex_guest' },
+                { name: '🔗 Muzalex Link Insertion', value: 'muzalex_link' },
+                { name: '🧪 Sencha Customer (Test)', value: 'sencha' },
                 { name: '⚡ Quick Guest Post', value: 'quick' },
                 { name: '⚙️ Custom Invoice', value: 'custom' }
             ]
@@ -27,7 +29,48 @@ async function createAndSendInvoice() {
     
     let invoiceData;
     
-    if (invoiceType === 'sencha') {
+    if (invoiceType === 'muzalex_guest') {
+        const { url, title } = await inquirer.prompt([
+            {
+                type: 'input',
+                name: 'url',
+                message: 'Published article URL:',
+                default: 'https://techgeekers.com/wow-mop-classic-gold-tech-driven-gold-optimization/'
+            },
+            {
+                type: 'input',
+                name: 'title',
+                message: 'Article title:',
+                default: 'WoW MoP Classic Gold: Tech-Driven Gold Optimization'
+            }
+        ]);
+        
+        invoiceData = CustomerTemplates.createMuzalexGuestPostInvoice(url, title);
+        
+    } else if (invoiceType === 'muzalex_link') {
+        const { targetUrl, anchorText, price } = await inquirer.prompt([
+            {
+                type: 'input',
+                name: 'targetUrl',
+                message: 'Target URL for link insertion:',
+                validate: input => input.includes('http') || 'Please enter a valid URL'
+            },
+            {
+                type: 'input',
+                name: 'anchorText',
+                message: 'Anchor text for the link:'
+            },
+            {
+                type: 'number',
+                name: 'price',
+                message: 'Link insertion price (USD):',
+                default: 20
+            }
+        ]);
+        
+        invoiceData = CustomerTemplates.createMuzalexLinkInsertionInvoice(targetUrl, anchorText, price);
+        
+    } else if (invoiceType === 'sencha') {
         const { price, confirm } = await inquirer.prompt([
             {
                 type: 'number',
@@ -117,7 +160,7 @@ async function createAndSendInvoice() {
             subject: 'Invoice for Guest Post Publication Service',
             note: `Dear Customer,\n\nThank you for choosing our guest post publication service. Please find your invoice attached.\n\nPayment is due within 3 days as per our terms.\n\nIf you have any questions, please don't hesitate to contact us.\n\nBest regards,\nTG Media. Tech Geekers`,
             sendToRecipient: true,
-            sendToInvoicer: false
+            sendToInvoicer: true
         });
         
         if (sendResult.success) {

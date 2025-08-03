@@ -1,0 +1,51 @@
+{
+  "customer": {
+    "email": "bulkclient@example.com",
+    "firstName": "Bulk",
+    "lastName": "Client",
+    "businessName": "SEO Masters Inc"
+  },
+  "services": [
+    {
+      "type": "link_insertion",
+      "price": 15,
+      "url": "https://client-site.com/product-a",
+      "anchorText": "best gaming headset 2024",
+      "description": "Link insertion in gaming hardware review article"
+    },
+    {
+      "type": "link_insertion", 
+      "price": 15,
+      "url": "https://client-site.com/product-b", 
+      "anchorText": "professional gaming mouse",
+      "description": "Link insertion in gaming accessories guide"
+    },
+    {
+      "type": "link_insertion",
+      "price": 15,
+      "url": "https://client-site.com/product-c",
+      "anchorText": "mechanical gaming keyboard",
+      "description": "Link insertion in mechanical keyboard comparison"
+    },
+    {
+      "type": "link_insertion",
+      "price": 15,
+      "url": "https://client-site.com/product-d", 
+      "anchorText": "gaming monitor deals",
+      "description": "Link insertion in monitor buying guide"
+    },
+    {
+      "type": "link_insertion",
+      "price": 15,
+      "url": "https://client-site.com/product-e",
+      "anchorText": "gaming chair reviews",
+      "description": "Link insertion in ergonomic gaming furniture article"
+    }
+  ],
+  "discount": {
+    "amount": 15,
+    "description": "5+ link insertion bulk discount"
+  },
+  "note": "Thank you for your bulk link insertion order. All 5 links have been strategically placed across our high-traffic gaming content. Payment is due within 3 days.",
+  "reference": "BULK-LINKS-003"
+}

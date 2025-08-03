@@ -1,0 +1,31 @@
+{
+  "services": [
+    {
+      "type": "guest_post",
+      "price": 40,
+      "url": "https://techgeekers.com/example-article-1",
+      "title": "Example Gaming Article: Tech Optimization",
+      "description": "Example gaming article about tech optimization"
+    },
+    {
+      "type": "link_insertion",
+      "price": 20,
+      "url": "https://example-client.com/gaming-tools",
+      "anchorText": "advanced gaming optimization tools",
+      "description": "Strategic link placement in existing high-traffic gaming article"
+    },
+    {
+      "type": "link_insertion",
+      "price": 20,
+      "url": "https://example-client.com/ai-solutions",
+      "anchorText": "AI gaming solutions",
+      "description": "Additional contextual link in AI-related content"
+    }
+  ],
+  "discount": {
+    "amount": 5,
+    "description": "Mixed services discount"
+  },
+  "note": "Thank you for choosing our guest post + link insertion package. Your article has been published and links have been strategically placed. Payment is due within 3 days.",
+  "reference": "EXAMPLE-SERVICE-002"
+}

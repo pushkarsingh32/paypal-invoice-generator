@@ -1,0 +1,22 @@
+{
+  "customer": {
+    "email": "newcustomer@example.com",
+    "firstName": "John",
+    "lastName": "Doe",
+    "businessName": "Example Company Ltd",
+    "address": {
+      "line1": "123 Business Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10001",
+      "countryCode": "US"
+    }
+  },
+  "service": {
+    "type": "guest_post",
+    "price": 45,
+    "url": "https://techgeekers.com/your-article-url",
+    "title": "Your Article Title Here",
+    "description": "Custom description for your guest post service"
+  }
+}

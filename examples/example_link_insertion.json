@@ -1,0 +1,15 @@
+{
+  "customer": {
+    "email": "customer@example.com",
+    "firstName": "John", 
+    "lastName": "Doe",
+    "businessName": "Example Company"
+  },
+  "service": {
+    "type": "link_insertion",
+    "price": 20,
+    "url": "https://example.com/target-page",
+    "anchorText": "Your Link Text Here",
+    "description": "Professional link insertion service on techgeekers.com"
+  }
+}
